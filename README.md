@@ -1,8 +1,21 @@
 # epsilon
 This is for Epsilon DevOps Workshop
 
-Steps to Install MVN
+Steps to Install MVN & Generate Dummy Code
 
+yum install java-1.8.0-openjdk-devel
+
+Setup JAVA_HOME in .bash_profile
+
+yum install -y maven
+
+mvn archetype:generate -DgroupId=com.thinknyx.training -DartifactId=epsilon -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+MVN Commands to Generate the Package
+
+mvn clean validate
+
+mvn clean install #create war file and install the same on mvn local repository
 
 
 Steps to Install GIT
