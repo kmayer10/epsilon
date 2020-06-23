@@ -1,3 +1,6 @@
+# Ingnore Runtime Generated folder during maven build execution
+target/
+
 # Compiled class file
 *.class
 
