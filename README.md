@@ -58,3 +58,25 @@ git commit -m "adding base code"
 git remote -v
 git branch
 git push origin master
+
+Installing Dokcer-CE
+===================================
+
+yum install -y yum-utils device-mapper-persistent-data lvm2
+
+ls -ltr /etc/yum.repos.d/
+
+yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
+ls -ltr /etc/yum.repos.d/
+
+yum install -y docker-ce docker-ce-cli containerd.io
+
+docker version
+
+systemctl start docker
+
+docker version
+
+systemctl enable docker
+
