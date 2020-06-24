@@ -1,4 +1,4 @@
-# epsilon
+# Epsilon
 This is for Epsilon DevOps Workshop
 
 Steps to Install MVN & Generate Dummy Code
