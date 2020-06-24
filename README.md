@@ -41,22 +41,39 @@ Commands to Push Code in GITHUB
 ============================================
 
 git init
+
 git remote -v
+
 git remote add origin https://github.com/kmayer10/epsilon.git
+
 git remote -v
+
 git pull origin master
+
 cat README.md
+
 git status
+
 ls -ltra
+
 cat .gitignore
+
 git config --global user.email "kulbhushan.mayer@thinknyx.com"
+
 git config --global user.name "Kul"
+
 git config --list
+
 git add --all
+
 git status
+
 git commit -m "adding base code"
+
 git remote -v
+
 git branch
+
 git push origin master
 
 Installing Dokcer-CE
