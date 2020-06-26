@@ -1,0 +1,3 @@
+FROM epsilon:tomcat-1.3
+ARG tomcatVersion
+COPY devops.war apache-tomcat-${tomcatVersion}/webapps/devops.war

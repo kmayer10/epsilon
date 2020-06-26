@@ -1,0 +1,3 @@
+FROM centos:8
+LABEL MaintainedBy=Kul EmailID=kulbhushan.mayer@thinknyx.com
+RUN yum install -y git
