@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  name: httpd-svc
+  namespace: kul
+  labels: 
+    app: httpd
+spec: 
+  type: NodePort
+  selector: 
+    owner: kul
+  ports: 
+  - name: "app-http-port"
+    protocol: TCP
+    port: 80
+    nodePort: 30000
