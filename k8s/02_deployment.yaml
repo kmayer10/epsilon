@@ -18,6 +18,9 @@ spec:
       containers: 
       - image: kulbhushanmayer/ericsson:bangalore-httpd-1.1
         name: httpd
+        envFrom: 
+        - configMapRef: 
+            name: httpd-cm
         resources: 
           requests: 
             memory: "64Mi"

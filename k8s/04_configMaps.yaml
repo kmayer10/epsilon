@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata: 
+  name: httpd-cm
+  namespace: kul
+data: 
+  queueurl: "http://abc.com"
+  queueport: "8080"
+  dbuser: "mysql"
