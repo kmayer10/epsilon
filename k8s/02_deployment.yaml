@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: httpd
+  namespace: kul
+  labels: 
+    app: httpd
+  annotations: 
+    githublink: https://github.com/kmayer10/epsilon.git
+    maintainer: Kul
+spec: 
+  replicas: 3
+  template: 
+    metadata: 
+      labels: 
+        owner: kul
+    spec: 
+      containers: 
+      - image: httpd
+        name: httpd
+  selector: 
+    matchLabels: 
+      owner: kul
+
