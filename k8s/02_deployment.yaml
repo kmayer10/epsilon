@@ -19,6 +19,8 @@ spec:
       - image: kulbhushanmayer/ericsson:bangalore-httpd-1.1
         name: httpd
         envFrom: 
+        - secretRef: 
+            name: mysqlpwd
         - configMapRef: 
             name: httpd-cm
         resources: 
