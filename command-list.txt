@@ -1,0 +1,569 @@
+Command Histroy Day -2 
+============================================= 
+
+	1  exit
+    2  vi /etc/ssh/sshd_config
+    3  systemctl restart sshd
+    4  useradd thinknyx
+    5  passwd thinknyx
+    6  passwd root
+    7  visudo
+    8  systemctl restart sshd
+    9  passwd centos
+   10  systemctl restart sshd
+   11  vi /etc/ssh/sshd_config
+   12  vi /etc/cloud/cloud.cfg
+   13  reboot
+   14  ll
+   15  cd epsilon-training/
+   16  git clone https://github.com/kmayer10/epsilon.git
+   17  ll
+   18  cd epsilon/
+   19  ll
+   20  history
+   21  cat mvn-settings.xml
+   22  pwd
+   23  git branch
+   24  git branch -r
+   25  git remote -v
+   26  git fetch origin
+   27  git branch -r
+   28  history
+   29  ll
+   30  git status
+   31  git checkout feature1
+   32  git checkout feature-1
+   33  git status
+   34  git log
+   35  git log --oneline
+   36  git log --oneline master
+   37  git log --oneline integration
+   38  git log --oneline origin/integration
+   39  git stauts
+   40  git status
+   41  vi src/main/webapp/index.jsp
+   42  git status
+   43  cat src/main/webapp/index.jsp
+   44  git checkout -- src/main/webapp/index.jsp
+   45  cat src/main/webapp/index.jsp
+   46  vi src/main/webapp/index.jsp
+   47  mvn clean package
+   48  mvn clean install
+   49  git add
+   50  git add src/main/webapp/index.jsp
+   51  git status
+   52  vi .gitignore
+   53  git status
+   54  git add .gitignore
+   55  git status
+   56  git config --global user.name "Kul"
+   57   git config --global user.email "kulbhushan.mayer@thinknyx.com"
+   58  git log
+   59  git commit -m "complted feature-1"
+   60  git log
+   61  git commit --amend
+   62  git log
+   63  git push origin feature-1
+   64  history
+   65  cat .gitignore
+   66  vi .gitignore
+   67  git add .gitignore
+   68  git commit -m "added changes as suggested by Labdhi"
+   69  git push origin feature-1
+   70  git log --oneline
+   71  git fetch origin
+   72  git status
+   73  git log --online
+   74  git log --oneline
+   75  git log --oneline origin/integration
+   76  git log -p
+   77  git log -p  origin/integration
+   78  history
+   79  git branch -r
+   80  git status
+   81  git checkout feature-2
+   82  git status
+   83  cat .gitignore
+   84  vi pom.xml
+   85  git add pom.xml
+   86  git commit -m "added some comments"
+   87  git rebase origin/integration
+   88  git log
+   89  git status
+   90  git checkout integration
+   91  git branch
+   92  git checkout feature-2
+   93  echo "rebase demo" >> demo.txt
+   94  git add demo.txt
+   95  git commit -m "rebase - 1"
+   96  git checkout feature-1
+   97  echo "rebase demo" >> demo1.txt
+   98  git add demo1.txt
+   99  git commit -m "rebase - 2"
+  100  git checkout integration
+  101  echo "rebase demo" >> demo3.txt
+  102  mv demo3.txt demo2.txt
+  103  git add demo2.txt
+  104  git commit -m "rebase - 3"
+  105  git status
+  106  ll
+  107  git checkout feature-1
+  108  ll
+  109  git merge integration
+  110  git log --oneline
+  111  git checkout feature-2
+  112  ll
+  113  git log --oneline
+  114  git rebase integration
+  115  git log --oneline
+  116  ll
+  117  history
+
+Day 3
+============================================
+   21  yum install -y yum-utils device-mapper-persistent-data lvm2
+   22  ls -ltr /etc/yum.repos.d/
+   23  yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   24  ls -ltr /etc/yum.repos.d/
+   25  yum install -y docker-ce docker-ce-cli containerd.io
+   26  docker version
+   27  systemctl start docker
+   28  docker version
+   29  systemctl enable docker
+   30  history
+   31  cat /etc/os-release
+   32  docker image ls
+   33  cat /etc/os-release
+   34  docker container ps
+   35  docker container run centos cat /etc/os-release
+   36  docker container run centos sleep 10
+   37  docker container run fedora cat /etc/os-release
+   38  docker image ls
+   39  docker container run ubuntu cat /etc/os-release
+   40  docker image ls
+   41  docker container run kali cat /etc/os-release
+   42  docker container run alpine cat /etc/os-release
+   43  docker image ls
+   44  history
+   45  docker container ps
+   46  docker container ps -a
+   47  docker container run alpine cat /etc/os-release
+   48  history
+   49  docker container run kalilinux cat /etc/os-release
+   50  hostname
+   51  docker container run -i -t ubuntu
+   52  history
+   53  docker ps
+   54  docker ps -a
+   55  docker container run -i -t ubuntu
+   56  docker container ps
+   57  docker container ps  -a
+   58  docker cotnainer start fa030555562a
+   59  docker container start fa030555562a
+   60  dockr ps
+   61  docker ps
+   62  docker container exec -it inspiring_bhabha /bin/bash
+   63  docker ps
+   64  history
+   65  ll
+   66  docker ps
+   67  docker ps  -a
+   68  docker container ps -a
+   69  docker cotnainer stop peaceful_feistel
+   70  docker container stop peaceful_feistel
+   71  docker container ps -a
+   72  docker container ps -a | wc -l
+   73  docker container stop inspiring_bhabha
+   74  docker container ps -a | wc -l
+   75  docker container ps -a
+   76  dokcer container start inspiring_bhabha
+   77  docker container start inspiring_bhabha
+   78  docker container ps -a | wc -l
+   79  docker container ps -a
+   80  docker container rm peaceful_feistel
+   81  docker container ps -a
+   82  docker container prune
+   83  docker container ps -a
+   84  docker container prune
+   85  docker container ps -a
+   86  java --version
+   87  docker image ls
+   88  docker container run -i -t centos:7
+   89  docker container prune
+   90  docker container run -i -t --name java-8 centos:7
+   91  docker container ps -a
+   92  docker container prune
+   93  docker container run -i -t --name java-8 --hostname java-8 centos:7
+   94  docker container ps -a
+   95  docker container run -i -t --name java-11 --hostname java-11 centos:7
+   96  history
+   97  hostname  set-hostname docker-host
+   98  hostnamectl  set-hostname docker-host
+   14  docker cotnainer ps
+   15  docker container ps
+   16  docker container ps -a
+   17  docker container ps
+   18  git --version
+   19  yum remove -y git
+   20  git --version
+   21  docker contaienr ps
+   22  docker container ps
+   23  history
+   24  docker container run -it centos
+   25  docker container start java-8
+   26  docker container exec -i java-8 yum install java-1.8.0-openjdk-devel
+   27  docker container exec -i java-8 yum install -y java-1.8.0-openjdk-devel
+   28  docker container exec -i java-8 java -version
+   29  docker container exec -i java-11 java -version
+   30  docker contanier ps
+   31  docker container ps
+   32  docker container exec -i inspiring_bhabha java -version
+   33  history
+   34  docker container ps -a
+   35  docker container kill `docker container ps -aq`
+   36  docker container prune
+   37  docker container ps -a
+   38  docker container run -i -d --name java-8 --hostname java-8 centos:7
+   39  docker container run -i -d --name java-11 --hostname java-11 centos:7
+   40  docker container ps -a
+   41  docker container exec -it java-8 java -version
+   42  docker container exec -it java-11 java -version
+   43  docker container exec -it java-8 yum install -y java-1.8.0-openjdk-devel
+   44  docker container exec -it java-8 java -version
+   45  docker container exec -it java-11 java -version
+   46  docker container exec -it java-11 yum install -y java-11-openjdk-devel
+   47  docker container exec -it java-11 java -version
+   48  history
+   49  java -version
+   50  git --version
+   51  history
+   52  docker container stop `docker container ps -aq`
+   53  docker container ps -a
+   54  dokcer container run jpetazzo/clock
+   55  docker container run jpetazzo/clock
+   56  docker container ps -a
+   57  docker container run -d jpetazzo/clock
+   58  docker container ps
+   59  ps -ef
+   60  docker container ps
+   61  docker container logs happy_benz
+   62  docker container logs --tail 3 happy_benz
+   63  date
+   64  docker container logs --tail 3 --follow  happy_benz
+   65  date
+   66  docker container ps
+   67  history
+   68  docker container inspect happy_benz
+   69  cat /var/lib/docker/containers/c76484eb041faf04131acbd9ddc29a9131d2dbe6c61f250c39deaa3618cb6e7a/hostname
+   70  cat /var/lib/docker/containers/c76484eb041faf04131acbd9ddc29a9131d2dbe6c61f250c39deaa3618cb6e7a/c76484eb041faf04131acbd9ddc29a9131d2dbe6c61f250c39deaa3618cb6e7a-json.log
+   71  docker container inspect happy_benz
+   72  ifconfig
+   73  docker container ps
+   74  docker container run -d --name httpd-demo httpd
+   75  docker container ps
+   76  docker container kill happy_benz
+   77  docker container ps
+   78  docker container inspect httpd-demo
+   79  curl http://172.17.0.3:80
+   80  docker container exec -it httpd-demo /bin/bash
+   81  curl http://172.17.0.3:80
+   82  docker container run -d --name httpd-demo-1 -p 80:80  httpd
+   83  docker container ps
+   84  docker container exec -it httpd-demo-1 /bin/bash
+   85  docker container run -d --name httpd-demo-2 -p 90:80  httpd
+   86  docker container ps
+
+
+
+Kubernetes
+
+    1  kubectl get ns
+    2  kubectl create ns kul
+    3  kubectl get pods
+    4  kubectl get pods -n kul
+    5  kubectl get pods -n kube-system
+    6  kubectl config set-context --current --namespace=kul
+    7  kubectl get pods
+    8  history
+    9  kubectl get pods
+   10  kubectl run demo --image=httpd
+   11  kubectl get pods
+   12  kubectl describe pod demo
+   13  history
+   14  kubectl get pods -o wide
+   15  kubectl get pods --all-namespaces
+   16  kubectl get pods --all-namespaces | grep -i demo
+   17  kubectl delete pod demo
+   18  kubectl  get pods
+   19  kubectl run demo --image=httpd
+   20  kubectl get all
+   21  kubectl delete pod demo
+   22  kubectl get all
+   23  kubectl create deployment demo --image=httpd
+   24  kubectl get all
+   25  kubectl describe deploy demo
+   26  kubectl describe rs demo-7d4bb77dc8
+   27  kubectl describe pod demo-7d4bb77dc8-75mp5
+   28  kubectl get all
+   29  kubectl delete pod demo-7d4bb77dc8-75mp5
+   30  kubectl get all
+   31  kubectl delete rs demo-7d4bb77dc8
+   32  kubectl get all
+   33  kubectl delete deployment demo
+   34  kubectl get all
+   35  history
+   36  kubectl get all
+   37  history
+   38  kubectl create deployment demo --image=httpd
+   39  kubectl get all
+   40  #kubectl scale deployment demo --replicas=3
+   41  kubectl describe demo
+   42  kubectl describe deploy demo
+   43  kubectl scale deployment demo --replicas=3
+   44  kubectl get all
+   45  kubectl get all -o wide
+   46  kubectl scale deployment demo --replicas=2
+   47  kubectl get all -o wide
+   48  kubectl delete pod --all
+   49  kubectl get all -o wide
+   50  history
+   51  kubectl get deployment | grep -i image
+   52  kubectl get deployment demo | grep -i image
+   53  kubectl describe deployment demo | grep -i image
+   54  kubectl describe deployment demo | grep -i replicaset
+   55  kubectl rollout history deployment demo
+   56  kubectl rollout status deployment demo
+   57  kubectl get all
+   58  kubectl set image deployment demo *=kulbhushanmayer/ericsson:bangalore-httpd-1.1
+   59  kubectl get all
+   60  kubectl rollout status deployment demo
+   61  kubectl rollout history deployment demo
+   62  kubectl describe deployment demo | grep -i replicaset
+   14  kubectl get svc --all-namespaces
+   15  kubectl get all
+   16  kubectl expose deployment demo --port=80 --type=NodePort
+   17  kubectl get all
+   18  kubectl get all -o wide
+   19  history
+   20  kubectl get svc --all-namespaces
+   21  kubectl describe svc demo
+   22  kubectl get pods
+   23  kubectl get pods  --show-labels
+   24  kubectl scale deployment demo replicas=3
+   25  kubectl scale deployment demo --replicas=3
+   26  kubectl describe svc demo
+   27  kubectl get pods -o wide
+   28  kubectl set image deployment demo *=thinknyx/vote:latest
+   29  kubectl get pods -o wide
+   30  kubectl describe pod demo-6f64499ff-mftxb
+   31  kubectl get pods -o wide
+   32  kubectl set image deployment demo *=thinknyx/vote:2.0
+   33  kubectl get pods -o wide
+   35  kubectl get pods
+   36  kubectl get pods -o wide
+   37  kubectl scale deployment demo --replicas=5
+   38  kubectl get pods -o wide
+   39  kubectl get svc --all-namespaces
+   
+   
+      94  mkdir epsilon-training
+   95  cd epsilon-training/
+   96  vi 01_namespace.yaml
+   97  kubectl get ns
+   98  kubectl apply -f 01_namespace.yaml
+   99  kubectl get ns
+  100  kubectl delete -f 01_namespace.yaml
+  101  kubectl get ns
+  102  git init
+  103  git remote add origin https://github.com/kmayer10/epsilon.git
+  104  git pull origin master
+  105  ll
+  106  mkdir k8s
+  107  cd k8s/
+  108  mv ../01_namespace.yaml .
+  109  ll
+  110  git add 01_namespace.yaml
+  111  git commit -m "added namespace yaml"
+  112  git config --global user.email "kulbhushan.mayer@thinknyx.com"
+  113  git config --global user.name "Kul"
+  114  git commit -m "added namespace yaml"
+  115  cta 01_namespace.yaml
+  116  cat 01_namespace.yaml
+  117  #kubectl apply -f 01_namespace.yaml
+  118  #kubectl delete -f 01_namespace.yaml
+  119  kubectl apply -f 01_namespace.yaml
+  120  kubectl get ns
+  121  cat 01_namespace.yaml
+  122  kubectl get ns
+  123  vi 02_deployment.yaml
+  124  kubectl get all -n kul
+  125  kubectl apply -f 02_deployment.yaml
+  126  vi 02_deployment.yaml
+  127  kubectl apply -f 02_deployment.yaml
+  128  kubectl get all -n kul
+  129  kubectl get all -n kul --show-labels
+  130  kubectl get all -n kul -o wide
+  131  git add 02_deployment.yaml
+  132  git commit -m "added deployment manifest"
+  133  cat 02_deployment.yaml
+  134  ll
+  135  kubectl apply -f .
+  136  kubectl delete -f .
+  137  kubectl get ns
+  138  vi 02_deployment.yaml
+  139  kubectl apply -f .
+  140  kubectl get all -n kul
+  141  kubectl describe pod httpd-5bc477467c-gpchn -n kul
+  142* kubectl get nodes --show-labe
+  143  kubectl get nodes --show-labels | grep k-i kul
+  144  kubectl get nodes --show-labels | grep -i kul
+  145  kubectl get nodes --show-labels | grep -i worker-22
+  146  kubectl get all -n kul
+  147  kubectl label node worker-22 nodeName=kul
+  148  kubectl get nodes --show-labels | grep -i worker-22
+  149  kubectl get all -n kul
+  150  kubectl get all -n kul  -o wide
+  151  history
+  152  git commit -m "added nodeselction tag" 02_deployment.yaml
+  153  cat 02_deployment.yaml
+  154  vi 02_deployment.yaml
+  155  kubectl apply -f .
+  156  kubectl get all -n kul
+  157  vi 02_deployment.yaml
+  158  kubectl apply -f .
+  159  kubectl get all -n kul
+  160  kubectl delete rs httpd-557d547b99
+  161  kubectl delete rs httpd-557d547b99 -n kul
+  162  kubectl rollout history deployment httpd
+  163  kubectl rollout history deployment httpd -n kul
+  164  kubectl describe deployment httpd -n kul
+  165  cat 02_deployment.yaml
+  166  history
+  167  git commit -m "added Upgrade Stretegy" 02_deployment.yaml
+  168  cat 02_deployment.yaml
+  169  ll
+  170  git status
+  171  git push origin master
+  172  vi 03_service.yaml
+  173  kubectl apply -f 03_service.yaml
+  174  vi 03_service.yaml
+  175  kubectl apply -f 03_service.yaml
+  176  vi 03_service.yaml
+  177  kubectl get pods -o wide -n kul
+  178  kubectl apply -f 03_service.yaml
+  179  kubectl get svc -n kul
+  180  kubectl describe svc httpd-svc -n kul
+  181  cat 03_service.yaml
+  182  kubectl apply -f .
+  183  kubectl get all -n kul
+  184  cat 03_service.yaml
+  185  kubectl describe svc httpd-svc -n kul
+  186  kubectl delete svc httpd-svc -n kul
+  187  kubectl apply -f 03_service.yaml
+  188  kubectl describe svc httpd-svc -n kul
+  189  kubectl get pods -n kul
+  190  kubectl get pods -n kul --show-labels
+  191  kubectl describe svc httpd-svc -n kul
+  192  kubectl  get pods -n kul
+  193  kubectl get pods -n kul
+  194  kubectl apply -f .
+  195  kubectl  get pods -n kul
+  196  kubectl describe pod httpd-767ff59d7d-5bnkm -n kul
+  197  vi 02_deployment.yaml
+  198  git status
+  199  git add 03_service.yaml
+  200  git commit -m "added service yaml"
+  201  vi 02_deployment.yaml
+  202  kubectl get pods -A
+  203  kubectl get deploy -A
+  204  kubectl describe node worker-22
+  205  kubectl delete -f 02_deployment.yaml
+  206  kubectl apply -f 02_deployment.yaml
+  207  vi 02_deployment.yaml
+  208  kubectl apply -f 02_deployment.yaml
+  209  kubectl describe node worker-22
+  210  kubectl get pods -n kul
+  211  vi 02_deployment.yaml
+  212  kubectl apply -f 02_deployment.yaml
+  213  kubectl get pods -n kul
+  214  kubectl describe pod httpd-7bb8b89795-d5nkh -n kul
+  215  kubectl describe node worker-22
+  216  history
+  217  cat 02_deployment.yaml
+  218  history
+  219  cat 02_deployment.yaml
+  220  kubectl describe node wroker-22
+  221  kubectl describe node worker-22
+  222  git status
+  223  git commit -am "changes"
+  224  kubectl get nodes
+  225  kubectl describe node worker-14
+  226  kubectl get nodes
+  227  kubectl label node worker-22 kulNode=kul
+  228  kubectl delete -f 02_deployment.yaml
+  229  vi 02_deployment.yaml
+  230  kubectl apply -f 02_deployment.yaml
+  231  vi 02_deployment.yaml
+  232  kubectl apply -f 02_deployment.yaml
+  233  kubectl get pods -n kul
+  234  vi 02_deployment.yaml
+  235  kubectl apply -f 02_deployment.yaml
+  236  kubectl get pods -n kul
+  237  kubectl label node worker-21 kulNode=kul
+  238  kubectl label node worker-20 kulNode=kul
+  239  kubectl get pods -n kul  -o wide
+  240  kubectl drain worker-22
+  241  kubectl drain worker-22 --ignore-daemonsets
+  242  kubectl get nodes
+  243  kubectl get pods -n kul  -o wide
+  244  kubectl get nodes
+  245  kubectl uncordon node worker-22
+  246  kubectl uncordon worker-22
+  247  kubectl get nodes
+  248  kubectl uncordon worker-13
+  249  kubectl get node
+  250  kubectl get ns
+  251  kubectl get pods --all-namespaces -o wide | grep -i worker-20
+  252  kubectl describe node worker-20
+  253  kubectl describe node worker-21
+  254  history
+  255  cat 02_deployment.yaml
+  256  git status
+  257  git commit -am "updated node selector label"
+  258  kubectl get pod -n kul
+  259  kubectl exec -it httpd-8d7dddfcd-8zbjz -- printenv
+  260  kubectl exec -it -n kul httpd-8d7dddfcd-8zbjz -- printenv
+  261  vi 04_configMaps.yaml
+  262  kubectl get cm -n kul
+  263  kubectl apply -f 04_configMaps.yaml
+  264  vi 04_configMaps.yaml
+  265  kubectl apply -f 04_configMaps.yaml
+  266  kubectl describe cn httpd-cm -n kul
+  267  kubectl describe cm httpd-cm -n kul
+  268  vi 02_deployment.yaml
+  269  kubectl apply -f 02_deployment.yaml
+  270  kubectl get pods -n kul
+  271  kubectl exec -it -n kul httpd-6c6b7475b8-9g8rv -- printenv
+  272  history
+  273  cat 04_configMaps.yaml
+  274  cat02
+  275  cat 02_deployment.yaml
+  276  kubectl create secret generic mysqlpwd --from-literal=MY_SQL_PWD=kul@123
+  277  kubectl get secret -n kul
+  278  kubectl create secret generic mysqlpwd --from-literal=MY_SQL_PWD=kul@123 -n kul
+  279  kubectl get secret -n kul
+  280  kubectl describe secret mysqlpwd -n kkul
+  281  kubectl describe secret mysqlpwd -n kul
+  282  kubectl exec -it -n kul httpd-6c6b7475b8-9g8rv -- printenv
+  283  git status
+  284  git add --all
+  285  git commit -m "added config map details"
+  286  vi 02_deployment.yaml
+  287  kubectl apply -f 02_deployment.yaml
+  288  vi 02_deployment.yaml
+  289  kubectl apply -f 02_deployment.yaml
+  290  kubectl get pods -n kul
+  291  kubectl exec -it -n kul httpd-7584797565-vpdqn -- printenv
+  292  history
+  293  cat 02_deployment.yaml
+
