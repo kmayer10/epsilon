@@ -18,6 +18,8 @@ spec:
       containers: 
       - image: httpd
         name: httpd
+      nodeSelector: 
+        nodeName: kul
   selector: 
     matchLabels: 
       owner: kul
