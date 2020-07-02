@@ -16,11 +16,15 @@ spec:
         owner: kul
     spec: 
       containers: 
-      - image: httpd
+      - image: kulbhushanmayer/ericsson:bangalore-httpd-1.1
         name: httpd
       nodeSelector: 
         nodeName: kul
   selector: 
     matchLabels: 
       owner: kul
-
+  strategy: 
+    type: RollingUpdate
+    rollingUpdate: 
+      maxSurge: 2
+      maxUnavailable: 1
