@@ -97,3 +97,13 @@ docker version
 
 systemctl enable docker
 
+
+Steps to Configure Jenkins
+===============================
+
+yum install -y java-1.8.0-openjdk-devel git maven
+yum install -y wget
+wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+nohup java -jar jenkins.war &
+cat /root/.jenkins/secrets/initialAdminPassword
+
